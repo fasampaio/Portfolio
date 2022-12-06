@@ -1,0 +1,49 @@
+/* CABEÇALHO TITULO */
+
+.cabecalho__titulo {
+    padding: 1rem 0;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* CABEÇALHO NAVBAR */
+
+.cabecalho__navbar {
+    padding: 1rem;
+}
+
+.cabecalho__navbar-lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecalho__navbar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+    gap: .5rem;
+}
+
+.navbar__item-texto {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .cabecalho__navbar-lista {
+        gap: 2rem;
+    }
+}

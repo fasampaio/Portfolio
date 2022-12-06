@@ -1,0 +1,87 @@
+.academico {
+    padding: 1rem;
+}
+
+.academico__titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.academico__item {
+    margin: 2rem 1rem;
+}
+
+.academico__texto {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.academico__texto-link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.academico__imagem {
+    max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    .academico__item {
+        margin: 2rem 7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .academico {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "item1 imagem1"
+            "item2 imagem1"
+            "item3 imagem2"
+            "item4 imagem2";
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(4x, auto);
+        margin: 0 1rem;
+    }
+
+    .academico__titulo {
+        grid-area: titulo;
+    }
+
+    .academico__item {
+        align-self: center;
+        /* justify-self: center; */
+    }
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    .academico__imagem {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .imagem1 {
+        grid-area: imagem1;
+    }
+
+    .imagem2 {
+        grid-area: imagem2;
+    }
+}

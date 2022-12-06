@@ -1,0 +1,25 @@
+.profissional {
+    padding: 1rem;
+}
+
+.profissional__titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.profissional__item {
+    margin: 2rem 1rem;
+}
+
+.profissional__texto {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .profissional__item {
+        margin: 2rem 5rem;
+    }
+}

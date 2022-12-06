@@ -1,0 +1,30 @@
+@import url(./contents/header.css);
+@import url(./contents/infos.css);
+@import url(./contents/projetos.css);
+@import url(./contents/profissional.css);
+@import url(./contents/academico.css);
+@import url(./contents/footer.css);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-titulo: 'Space Grotesk', sans-serif;
+    --fonte-principal: 'Quicksand', sans-serif;
+
+    --preto: black;
+    --branco: white;
+    --cinza: rgb(89, 119, 133, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--branco);
+}
