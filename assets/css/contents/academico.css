@@ -1,15 +1,19 @@
 .academico {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .academico__titulo {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
+    margin: 1rem;
 }
 
 .academico__item {
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
+    align-self: left;
 }
 
 .academico__texto {
@@ -24,7 +28,12 @@
 }
 
 .academico__imagem {
-    max-width: 300px;
+    max-width: 250px;
+    align-self: center;
+}
+
+.imagem2 {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,5 +92,6 @@
 
     .imagem2 {
         grid-area: imagem2;
+        display: block;
     }
 }
